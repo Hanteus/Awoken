@@ -12,7 +12,8 @@ public class MoveBlockScript : MonoBehaviour {
 	public bool inverted;
 	public GameObject linkedBlock = null;
 	MoveBlockScript linkedBlockScript = null;
-	
+    EyeScript eyeScript;
+
 	bool over = false;
 	bool selected = false;
 	float xPercentagePosition;
@@ -31,8 +32,9 @@ public class MoveBlockScript : MonoBehaviour {
 		xLimitDistance = positionLimit2.x - positionLimit1.x;
 		yLimitDistance = positionLimit2.y - positionLimit1.y;
 		tempPosition.z = transform.position.z;
+        eyeScript = GameObject.Find("Dreamer's Eye").GetComponent<EyeScript>();
 
-		if (linkedBlock != null)
+        if (linkedBlock != null)
 			linkedBlockScript = linkedBlock.GetComponent<MoveBlockScript>();
 	}
 
@@ -47,10 +49,12 @@ public class MoveBlockScript : MonoBehaviour {
 	// Update the block position if the player is moving it
 	void Update () {
 		if (over && Input.GetMouseButtonDown(1)) {
-			selected = true;		
-		} else if (!Input.GetMouseButton(1)) {
+			selected = true;
+            eyeScript.lockOnTarget(this.gameObject);
+        } else if (!Input.GetMouseButton(1)) {
 			selected = false;
-		}
+            eyeScript.unlockTarget();
+        }
 
 		if (selected && VerticalMovementEnabled) {
 			mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -136,9 +140,9 @@ public class MoveBlockScript : MonoBehaviour {
 		} else if (HorizontalMovementEnabled) {
 			tempPosition.y = transform.position.y;
 			if (inverted)
-				tempPosition.x = (percentagePosition * xLimitDistance - 100) / 100 + positionLimit1.x;
-			else
-				tempPosition.x = (100 - percentagePosition) / 100 * xLimitDistance + positionLimit1.x;
+                tempPosition.x = (percentagePosition) / 100 * xLimitDistance + positionLimit1.x;
+            else
+                tempPosition.x = (100 - percentagePosition) / 100 * xLimitDistance + positionLimit1.x;
 
 			if (tempPosition.x < positionLimit1.x)
 				tempPosition.x = positionLimit1.x;

@@ -12,6 +12,8 @@ public class EyeScript : MonoBehaviour {
     Vector3 extendedEnd;
     RaycastHit2D hit;
     int layerMask;
+    bool targetLocked;
+    GameObject target;
 
     // Use this for initialization
     void Start () {
@@ -31,9 +33,11 @@ public class EyeScript : MonoBehaviour {
 			active = false;
 			hideRay();
 		}
-		if (active)
-			updateRay ();
-	}
+        if (active && !targetLocked)
+            updateRay();
+        else if (active && targetLocked)
+            updateRayLocked();
+    }
 
 	void updateRay() {
 		rayEnd.x = Camera.main.ScreenToWorldPoint(Input.mousePosition).x - transform.parent.transform.position.x;
@@ -46,7 +50,6 @@ public class EyeScript : MonoBehaviour {
 
         if (hit == true)
         {
-            Debug.Log("Hit: " + hit.point.x + ", " + hit.point.y + " Hash: " + hit.transform.name);
             eyeRayLR.SetPosition(1, hit.point);
         }
         else {
@@ -57,14 +60,29 @@ public class EyeScript : MonoBehaviour {
         }
     }
 
-	void showRay() {
+    void updateRayLocked() {
+        eyeRayLR.SetPosition(0, transform.position);
+        eyeRayLR.SetPosition(1, target.transform.position);
+    }
+
+    void showRay() {
 		eyeRayLR.enabled = true;
 	}
 
 	void hideRay() {
 		eyeRayLR.enabled = false;
-	}
-		
+        unlockTarget();
+    }
+
+    public void lockOnTarget(GameObject target) {
+        targetLocked = true;
+        this.target = target;
+    }
+
+    public void unlockTarget(){
+        targetLocked = false;
+    }
+
 }
 
 // Debug.Log("Hit: " + hit.point.x + ", " + hit.point.y + " Hash: " + hit.transform.name);

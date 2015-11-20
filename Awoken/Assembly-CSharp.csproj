@@ -48,6 +48,7 @@
      <Compile Include="Assets\Script\Player\BulletScript.cs" />
      <Compile Include="Assets\Script\Player\EyeScript.cs" />
      <Compile Include="Assets\Script\Player\GroundCheck.cs" />
+     <Compile Include="Assets\Script\Player\LifeScript.cs" />
      <Compile Include="Assets\Script\Player\MoveBlockScript.cs" />
      <Compile Include="Assets\Script\Player\Player.cs" />
      <Compile Include="Assets\Script\Player\PlayerControl.cs" />

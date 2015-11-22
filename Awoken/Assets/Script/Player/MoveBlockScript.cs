@@ -82,7 +82,7 @@ public class MoveBlockScript : MonoBehaviour {
 				transform.position = Vector3.MoveTowards(transform.position, mousePosition, speed * Time.deltaTime);
 				xUpdate();
 			}
-		}	
+		}
 	}
 
 	// Update horizzontal

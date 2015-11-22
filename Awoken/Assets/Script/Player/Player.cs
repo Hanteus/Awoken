@@ -11,10 +11,9 @@ public class Player : MonoBehaviour {
     private Rigidbody2D rb2d;
     private Animator anim;
 
-    void Start(){
+    void Start() {
         rb2d = this.GetComponent<Rigidbody2D>();
         anim = this.GetComponent<Animator>();
-
     }
     
     void Update(){
@@ -71,4 +70,5 @@ public class Player : MonoBehaviour {
     public Animator getPlayerAnim () {
         return anim;
     }
+
 }

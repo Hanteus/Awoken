@@ -3,57 +3,59 @@
 public class ShootScript : MonoBehaviour
 {
 
-	// VARIABILI //
+    public Player player;
+    public GameObject projectile;
 
-	// Prefab del proiettile
-	public Transform shootPrefab;
-	// Velocità di fuoco
-	public float shootingRate = 0.2f;
-	// Cooldown
-	private float shootCooldown;
+    GameObject shootPositionObject;
+    float speed = 4f;
 
-	// CODICE //
+    // VARIABILI //
 
-	// Inizializzo il cooldown
-	void Start()
-	{
-		shootCooldown = 0f;
-	}
+    // Prefab del proiettile
+    public Transform shootPrefab;
+    // Cooldown
+    public float cooldown = 0.2f;
+    float waitingTime;
 
-	// Aggiorno il tempo di cooldown
-	void Update()
-	{
-		if (shootCooldown > 0)
-		{
-			shootCooldown -= Time.deltaTime;
-		}
-	}
+    // CODICE //
 
-	// Sparo
-	public void Attack()
-	{
-		if (CanAttack)
-		{
-			shootCooldown = shootingRate;
-			
-			// Creo un proiettile
-			var shootTransform = Instantiate(shootPrefab) as Transform;
-			
-			// Assegno la posizione
-			shootTransform.position = transform.position;
+    // Inizializzo il cooldown
+    void Start()
+    {
+        player = transform.parent.GetComponent<Player>();
+        shootPositionObject = this.transform.FindChild("ShootPosition").gameObject;
+    }
 
-			// Lo faccio muovere (MoveForwardScript serve a qualcosa?)
-			// MoveForwardScript move = shootTransform.gameObject.GetComponent<MoveForwardScript>();
-		}
-	}
+    // Aggiorno il tempo di cooldown
+    void Update()
+    {
+        if (waitingTime > 0)
+        {
+            waitingTime -= Time.deltaTime;
+        }
+        else if (Input.GetMouseButtonDown(0) || Input.GetMouseButton(0))
+        {
+            Fire();
+            waitingTime = cooldown;
+        }
+    }
 
-	// Controllo se posso sparare
-	public bool CanAttack
-	{
-		get
-		{
-			return shootCooldown <= 0f;
-		}
-	}
+    void Fire()
+    {
+
+        if (player.getFacingRight())
+        {
+            GameObject prj = (GameObject)Instantiate(projectile, shootPositionObject.transform.position, transform.rotation);
+            prj.GetComponent<BulletScript>().setDirection(-1f);
+        }
+        else
+        {
+            Vector3 rotationVector = transform.rotation.eulerAngles;
+            rotationVector.x = 180 - rotationVector.x;
+
+            GameObject prj = (GameObject)Instantiate(projectile, shootPositionObject.transform.position, Quaternion.Euler(rotationVector));
+            prj.GetComponent<BulletScript>().setDirection(1f);
+        }
+    }
 
 }

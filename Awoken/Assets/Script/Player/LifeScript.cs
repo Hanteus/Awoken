@@ -19,15 +19,9 @@ public class LifeScript : MonoBehaviour
     float lifeBarSizeX;
 
     // Use this for initialization
-<<<<<<< HEAD
-    void Start () {
-        // Inizialize maxLife
-        maxLife = GameObject.FindGameObjectWithTag ( "Player" ).GetComponent<Player> ().getHealth ();
 
-=======
     void Start()
     {
->>>>>>> 8ffeee44e5eba0a9a92569c523024edea0341513
         // Update maxLife with the one in the save file, if needed
         currentLife = maxLife;
 

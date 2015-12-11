@@ -13,17 +13,13 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb2d;
     private Animator anim;
 
-<<<<<<< HEAD
     private int health = 6;
 
-    void Start() {
-=======
     bool facingRight;
 
     void Start()
     {
         facingRight = true;
->>>>>>> 8ffeee44e5eba0a9a92569c523024edea0341513
         rb2d = this.GetComponent<Rigidbody2D>();
         anim = this.GetComponent<Animator>();
     }
@@ -97,7 +93,6 @@ public class Player : MonoBehaviour
         return anim;
     }
 
-<<<<<<< HEAD
     public int getHealth () {
         return this.health;
     }
@@ -113,11 +108,10 @@ public class Player : MonoBehaviour
     public void setPos ( Vector3 pos ) {
         this.transform.position = pos;
     }
-=======
+
     public bool getFacingRight()
     {
         return facingRight;
     }
 
->>>>>>> 8ffeee44e5eba0a9a92569c523024edea0341513
 }

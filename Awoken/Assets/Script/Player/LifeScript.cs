@@ -2,7 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class LifeScript : MonoBehaviour {
+public class LifeScript : MonoBehaviour
+{
 
     private int currentLife;
     private int maxLife;
@@ -18,10 +19,15 @@ public class LifeScript : MonoBehaviour {
     float lifeBarSizeX;
 
     // Use this for initialization
+<<<<<<< HEAD
     void Start () {
         // Inizialize maxLife
         maxLife = GameObject.FindGameObjectWithTag ( "Player" ).GetComponent<Player> ().getHealth ();
 
+=======
+    void Start()
+    {
+>>>>>>> 8ffeee44e5eba0a9a92569c523024edea0341513
         // Update maxLife with the one in the save file, if needed
         currentLife = maxLife;
 
@@ -35,14 +41,16 @@ public class LifeScript : MonoBehaviour {
         foreach (Transform child in lifeGUI.transform)
             childNumber++;
 
-        for (int i = 1; i <= childNumber; i++) {
-            foreach (Transform child in lifeGUI.transform) {
+        for (int i = 1; i <= childNumber; i++)
+        {
+            foreach (Transform child in lifeGUI.transform)
+            {
                 if (child.name == "Eye (" + i + ")")
                 {
                     lifeAnimatorArray.Add(child.GetComponent<Animator>());
                 }
             }
-         }
+        }
 
         updateLifeGUI();
     }
@@ -69,14 +77,17 @@ public class LifeScript : MonoBehaviour {
         updateLifeBar();
     }
 
-    public void updateLifeGUI() {
+    public void updateLifeGUI()
+    {
         int displayedLife = 0;
 
-        if (currentLife % 2 == 0) {
+        if (currentLife % 2 == 0)
+        {
             // Se currentLife è pari setto currentLife / 2 a 2 assieme a quelli precedenti, quelli sucessivi a 0
             displayedLife = currentLife / 2;
 
-            for (int i = 0; i < displayedLife; i++) {
+            for (int i = 0; i < displayedLife; i++)
+            {
                 lifeAnimatorArray[i].SetInteger("state", 2);
             }
 
@@ -85,7 +96,8 @@ public class LifeScript : MonoBehaviour {
                 lifeAnimatorArray[i].SetInteger("state", 0);
             }
         }
-        else {
+        else
+        {
             // Se currentLife è dispari setto currentLife / 2 a 1, quelli precedenti a 2, quelli sucessivi a 0
             displayedLife = currentLife / 2;
 
@@ -103,13 +115,15 @@ public class LifeScript : MonoBehaviour {
         }
     }
 
-    public void updateLifeBar() {
+    public void updateLifeBar()
+    {
         lifeBar.transform.localScale = new Vector3((currentLife * 1f) / maxLife * lifeBarSizeX, lifeBar.transform.localScale.y, lifeBar.transform.localScale.x);
         lifeBar.transform.localPosition = new Vector3(lifeBarPositionX - (1 - (currentLife * 1f) / maxLife) * lifeBarSizeX * 2, lifeBar.transform.localPosition.y, lifeBar.transform.localPosition.x);
     }
 
 
-    public void killPlayer() {
+    public void killPlayer()
+    {
         // Kill player
     }
 

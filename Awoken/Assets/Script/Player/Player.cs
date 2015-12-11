@@ -11,6 +11,8 @@ public class Player : MonoBehaviour {
     private Rigidbody2D rb2d;
     private Animator anim;
 
+    private int health = 6;
+
     void Start() {
         rb2d = this.GetComponent<Rigidbody2D>();
         anim = this.GetComponent<Animator>();
@@ -71,4 +73,19 @@ public class Player : MonoBehaviour {
         return anim;
     }
 
+    public int getHealth () {
+        return this.health;
+    }
+
+    public void setHealth ( int h ) {
+        this.health = h;
+    }
+
+    public Vector3 getPos () {
+        return this.transform.position;
+    }
+
+    public void setPos ( Vector3 pos ) {
+        this.transform.position = pos;
+    }
 }

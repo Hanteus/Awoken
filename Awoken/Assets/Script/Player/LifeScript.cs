@@ -4,8 +4,8 @@ using System.Collections.Generic;
 
 public class LifeScript : MonoBehaviour {
 
-    int currentLife;
-    int maxLife = 6;
+    private int currentLife;
+    private int maxLife;
 
     // Variables for the life
     public GameObject lifeGUI;
@@ -19,6 +19,9 @@ public class LifeScript : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        // Inizialize maxLife
+        maxLife = GameObject.FindGameObjectWithTag ( "Player" ).GetComponent<Player> ().getHealth ();
+
         // Update maxLife with the one in the save file, if needed
         currentLife = maxLife;
 

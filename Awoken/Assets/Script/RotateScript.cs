@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class RotateScript : MonoBehaviour
-{
+public class RotateScript : MonoBehaviour {
 
     public float delta = 0f;
     public float multiplier = 1f;
@@ -11,13 +10,11 @@ public class RotateScript : MonoBehaviour
     float fAngle;
 
     // Use this for initialization
-    void Start()
-    {
+    void Start() {
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
         v3Pos = Input.mousePosition;
         v3Pos.z = (this.transform.position.z - Camera.main.transform.position.z);
         v3Pos = Camera.main.ScreenToWorldPoint(v3Pos);

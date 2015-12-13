@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 
-public class EyeScript : MonoBehaviour
-{
+public class EyeScript : MonoBehaviour {
 
     public LineRenderer eyeRayLR;
     public bool active;
@@ -22,8 +21,7 @@ public class EyeScript : MonoBehaviour
     GameObject rayStartObject;
 
     // Use this for initialization
-    void Start()
-    {
+    void Start() {
         active = false;
         extendedEnd.z = transform.position.z;
         layerMask = LayerMask.NameToLayer(layerMaskString);
@@ -31,16 +29,13 @@ public class EyeScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(1))
-        {
+    void Update() {
+        if (Input.GetMouseButtonDown(1)) {
             active = true;
             riseArm();
             showRay();
         }
-        if (Input.GetMouseButtonUp(1))
-        {
+        if (Input.GetMouseButtonUp(1)) {
             active = false;
             lowerArm();
             hideRay();
@@ -51,39 +46,31 @@ public class EyeScript : MonoBehaviour
             updateRayLocked();
     }
 
-    void riseArm()
-    {
+    void riseArm() {
         rotationVector = transform.rotation.eulerAngles;
         rotationVector.z = 65f;
         transform.rotation = Quaternion.Euler(rotationVector);
     }
 
-    void lowerArm()
-    {
+    void lowerArm() {
         rotationVector = transform.rotation.eulerAngles;
         rotationVector.z = 0f;
         transform.rotation = Quaternion.Euler(rotationVector);
     }
 
-    void updateRay()
-    {
+    void updateRay() {
         rayEnd = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.parent.position;
 
         rayStartVisual = rayStartObject.transform.position;
-        rayStart = - rayStartObject.transform.localPosition + transform.parent.localPosition;
-
-        Debug.Log(rayStartObject.transform.localPosition + " - " + transform.parent.localPosition);
+        rayStart = rayStartVisual;
 
         hit = Physics2D.Raycast(rayStart, rayEnd, Mathf.Infinity, (1 << layerMask));
 
         eyeRayLR.SetPosition(0, rayStartVisual);
 
-        if (hit == true)
-        {
+        if (hit == true) {
             eyeRayLR.SetPosition(1, hit.point);
-        }
-        else
-        {
+        } else {
             extendedEnd.x = rayEnd.x;
             extendedEnd.y = rayEnd.y;
             extendedEnd.z = 5;
@@ -92,31 +79,26 @@ public class EyeScript : MonoBehaviour
         }
     }
 
-    void updateRayLocked()
-    {
-        eyeRayLR.SetPosition(0, transform.position);
+    void updateRayLocked() {
+        eyeRayLR.SetPosition(0, rayStartObject.transform.position);
         eyeRayLR.SetPosition(1, target.transform.position);
     }
 
-    void showRay()
-    {
+    void showRay() {
         eyeRayLR.enabled = true;
     }
 
-    void hideRay()
-    {
+    void hideRay() {
         eyeRayLR.enabled = false;
         unlockTarget();
     }
 
-    public void lockOnTarget(GameObject target)
-    {
+    public void lockOnTarget(GameObject target) {
         targetLocked = true;
         this.target = target;
     }
 
-    public void unlockTarget()
-    {
+    public void unlockTarget() {
         targetLocked = false;
     }
 

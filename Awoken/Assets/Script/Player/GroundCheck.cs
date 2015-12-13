@@ -10,26 +10,25 @@ public class GroundCheck : MonoBehaviour {
     }
 
     void OnTriggerEnter2D(Collider2D c) {
-        if ( c.gameObject.tag == "Ground" ) {
-            player.getPlayerAnim ().SetBool ( "Grounded" , true );
+        if (c.gameObject.tag == "Ground") {
+            player.getPlayerAnim().SetBool("Grounded", true);
         }
-        if (c.gameObject.tag == "Mobile Platform")
-        {
+        if (c.gameObject.tag == "Mobile Platform") {
             Debug.Log("IN");
             player.getPlayerAnim().SetBool("Grounded", true);
             transform.parent.parent = c.transform.parent;
         }
     }
 
-    void OnTriggerStay2D ( Collider2D c ) {
-        if ( c.gameObject.tag == "Ground" ) {
-            player.getPlayerAnim ().SetBool ( "Grounded" , true );
-        } 
+    void OnTriggerStay2D(Collider2D c) {
+        if (c.gameObject.tag == "Ground") {
+            player.getPlayerAnim().SetBool("Grounded", true);
+        }
     }
 
     void OnTriggerExit2D(Collider2D c) {
-        if ( c.gameObject.tag == "Ground" ) {
-            player.getPlayerAnim ().SetBool ( "Grounded" , false );
+        if (c.gameObject.tag == "Ground") {
+            player.getPlayerAnim().SetBool("Grounded", false);
         }
         if (c.gameObject.tag == "Mobile Platform") {
             Debug.Log("OUT");

@@ -8,6 +8,7 @@ public class BulletScript : MonoBehaviour
     public string layerMaskEnemyString;
     public float speed = 6f;
     public float liveTime = 3f;
+    public int damage;
 
     int layerMaskGround;
     int layerMaskEnemy;
@@ -39,9 +40,11 @@ public class BulletScript : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        else if (other.gameObject.layer == layerMaskEnemy)
+        else if (other.gameObject.tag == "Enemy")
         {
-            // DO SOMETHING
+            Debug.Log("Hit!");
+            other.GetComponent<BasicEnemyLifeScript>().damage(damage);
+            Destroy(gameObject);
         }
     }
 

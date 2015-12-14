@@ -50,8 +50,8 @@ public class LifeScript : MonoBehaviour
         updateLifeGUI();
     }
 
-    public void damagePlayer(int damage)
-    {
+    public void damagePlayer(int damage){
+        Debug.Log ( "Ouch!" );
         if (currentLife - damage < 0)
             killPlayer();
         else
@@ -119,7 +119,7 @@ public class LifeScript : MonoBehaviour
 
     public void killPlayer()
     {
-        // Kill player
+        //TODO: Kill player
     }
 
 }

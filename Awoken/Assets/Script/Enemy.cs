@@ -1,25 +1,28 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class Enemy : MonoBehaviour {
 
     public float walkSpeed = 1.0f;      // Walkspeed
     public float wallLeft;       // Define wallLeft
     public float wallRight;      // Define wallRight
+    public int damage = 1;
 
     private Vector2 walkAmount;
     private Vector3 rotateAmount;
-    private Vector3 originalPos; // Original float value
-
-    private bool attackCheck = false;
+    private Vector3 originalPos;
+    
     private bool patroling = true;
-    private bool facingRight;
 
-    private float attackDelta = 2.0f;
+    private float attackDelta = 3.0f;
     private float distanceToPlayer;
     private float originDelta = 0.5f;
     private float distanceToOrigin;
+    private LifeScript lfs;
 
-    private Transform player;
+    private GameObject player;
+
+    private Animator anim;
     
     void Start () {
         this.originalPos = this.transform.position;
@@ -29,14 +32,11 @@ public class Enemy : MonoBehaviour {
 
         Debug.Log ( "Position: " + originalPos.x + " WallLeft: " + wallLeft + " WallRight: " + wallRight );
 
-        player = GameObject.FindGameObjectWithTag ( "Player" ).transform;
+        player = GameObject.FindGameObjectWithTag ( "Player" );
 
-        if ( this.transform.rotation.eulerAngles.y < 180 ) {
-            facingRight = false;
-        }
-        else if ( this.transform.rotation.eulerAngles.y >= 180 ) {
-            facingRight = true;
-        }
+        anim = this.gameObject.GetComponent<Animator> ();
+
+        lfs = player.GetComponent<LifeScript> ();
 
     }
     
@@ -73,7 +73,7 @@ public class Enemy : MonoBehaviour {
             else {
                 //the player is escaped
                 //return to its position
-
+                anim.SetBool ( "Attack" , false );
                 Debug.Log ( "Carter escaped! Return to originalPos." );
 
                 if ( originalPos.x < this.transform.position.x ) {
@@ -108,7 +108,7 @@ public class Enemy : MonoBehaviour {
 
             Debug.Log ( "In range" );
             
-            if ( player.position.x < this.transform.position.x ) {
+            if ( player.transform.position.x < this.transform.position.x ) {
 
                 if ( this.transform.rotation.eulerAngles.y >= 180 ) {
                     Debug.Log ( "In range, rotate to left" );
@@ -116,7 +116,7 @@ public class Enemy : MonoBehaviour {
                     this.transform.Rotate ( rotateAmount );
                 }
             }
-            else if ( this.transform.position.x < player.position.x ) {
+            else if ( this.transform.position.x < player.transform.position.x ) {
 
                 if ( this.transform.rotation.eulerAngles.y < 180 ) {
                     Debug.Log ( "In range, rotate to right" );
@@ -127,6 +127,8 @@ public class Enemy : MonoBehaviour {
 
             if ( distanceToPlayer <= attackDelta ) {
                 Debug.Log ( "Attack!!!" );
+                anim.SetBool ( "Attack" , true );
+                EnemyAttackDamage ();
             }
             else {
                 walkAmount.x = -walkSpeed * Time.deltaTime;
@@ -136,4 +138,8 @@ public class Enemy : MonoBehaviour {
         }       
     }
 
+    IEnumerator EnemyAttackDamage () {
+            lfs.damagePlayer ( damage );
+            yield return new WaitForSeconds ( 1 );
+    }
 }

@@ -74,6 +74,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\FadingScene.cs" />
     <Compile Include="Assets\Script\AstarPathfindingProject\Core\AI\AIPath.cs" />
     <Compile Include="Assets\Script\AstarPathfindingProject\Core\AI\NavmeshController.cs" />
     <Compile Include="Assets\Script\AstarPathfindingProject\Core\AI\Seeker.cs" />
@@ -146,11 +147,13 @@
     <Compile Include="Assets\Script\AstarPathfindingProject\Utilities\ProfileHelper.cs" />
     <Compile Include="Assets\Script\AstarPathfindingProject\Utilities\UnityReferenceHelper.cs" />
     <Compile Include="Assets\Script\AstarPathfindingProject\changelog.cs" />
+    <Compile Include="Assets\Script\BasicEnemyLifeScript.cs" />
     <Compile Include="Assets\Script\Checkpoint.cs" />
     <Compile Include="Assets\Script\Enemy.cs" />
     <Compile Include="Assets\Script\EnemyAI.cs" />
     <Compile Include="Assets\Script\GameController.cs" />
     <Compile Include="Assets\Script\OpiumPipeScript.cs" />
+    <Compile Include="Assets\Script\OscillingLineScript.cs" />
     <Compile Include="Assets\Script\Player\BulletScript.cs" />
     <Compile Include="Assets\Script\Player\EyeScript.cs" />
     <Compile Include="Assets\Script\Player\GroundCheck.cs" />
@@ -158,8 +161,10 @@
     <Compile Include="Assets\Script\Player\MoveBlockScript.cs" />
     <Compile Include="Assets\Script\Player\Player.cs" />
     <Compile Include="Assets\Script\Player\ShootScript.cs" />
+    <Compile Include="Assets\Script\PortalScript.cs" />
     <Compile Include="Assets\Script\RotateScript.cs" />
     <Compile Include="Assets\Script\SpearScript.cs" />
+    <Compile Include="Assets\Script\WatcherScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Script\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh2.shader" />

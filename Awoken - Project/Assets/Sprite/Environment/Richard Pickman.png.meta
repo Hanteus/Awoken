@@ -1,0 +1,462 @@
+fileFormatVersion: 2
+guid: 329b70d36c5f9f34d9dc481838859641
+timeCreated: 1454844377
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Richard Pickman_0
+    21300002: Richard Pickman_1
+    21300004: Richard Pickman_2
+    21300006: Richard Pickman_3
+    21300008: Richard Pickman_4
+    21300010: Richard Pickman_5
+    21300012: Richard Pickman_6
+    21300014: Richard Pickman_7
+    21300016: Richard Pickman_8
+    21300018: Richard Pickman_9
+    21300020: Richard Pickman_10
+    21300022: Richard Pickman_11
+    21300024: Richard Pickman_12
+    21300026: Richard Pickman_13
+    21300028: Richard Pickman_14
+    21300030: Richard Pickman_15
+    21300032: Richard Pickman_16
+    21300034: Richard Pickman_17
+    21300036: Richard Pickman_18
+    21300038: Richard Pickman_19
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 100
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Richard Pickman_0
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 196
+        height: 470
+      alignment: 9
+      pivot: {x: 0.5622436, y: 0.61079216}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29.20076, y: 66.94375}
+        - {x: -40.20076, y: 40.94375}
+        - {x: -40.20076, y: -75.05625}
+        - {x: -21.20076, y: -105.05625}
+        - {x: 31.79924, y: -105.05625}
+        - {x: 31.79924, y: 58.94375}
+        - {x: 28.79924, y: 66.94375}
+    - name: Richard Pickman_1
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 0
+        width: 196
+        height: 470
+      alignment: 9
+      pivot: {x: 0.53047925, y: 0.61079216}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.175568, y: 66.94375}
+        - {x: -25.175568, y: 52.94375}
+        - {x: -38.175568, y: -4.0562515}
+        - {x: -38.175568, y: -27.056252}
+        - {x: -21.175568, y: -105.05625}
+        - {x: 27.824432, y: -105.05625}
+        - {x: 34.824432, y: -90.05625}
+        - {x: 34.824432, y: 66.94375}
+    - name: Richard Pickman_2
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 0
+        width: 196
+        height: 470
+      alignment: 9
+      pivot: {x: 0.49503592, y: 0.6101591}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 27.711365, y: 67.052635}
+        - {x: -7.2886353, y: 67.052635}
+        - {x: -23.288635, y: 52.052635}
+        - {x: -26.288635, y: 44.052635}
+        - {x: -35.288635, y: -3.9473648}
+        - {x: -35.288635, y: -20.947365}
+        - {x: -21.288635, y: -97.947365}
+        - {x: -19.288635, y: -104.947365}
+        - {x: 27.711365, y: -104.947365}
+        - {x: 27.711365, y: -102.947365}
+        - {x: 35.711365, y: -23.947365}
+        - {x: 35.711365, y: 53.052635}
+    - name: Richard Pickman_3
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 0
+        width: 196
+        height: 470
+      alignment: 9
+      pivot: {x: 0.4531717, y: 0.61097777}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.404938, y: 66.91183}
+        - {x: -32.404938, y: 43.911827}
+        - {x: -32.404938, y: -67.08817}
+        - {x: -20.404938, y: -105.08817}
+        - {x: 32.595062, y: -105.08817}
+        - {x: 35.595062, y: -91.08817}
+        - {x: 35.595062, y: 66.91183}
+    - name: Richard Pickman_4
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 0
+        width: 196
+        height: 470
+      alignment: 9
+      pivot: {x: 0.4946806, y: 0.6116108}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.769531, y: 66.80295}
+        - {x: -35.76953, y: 29.802948}
+        - {x: -35.76953, y: -57.197052}
+        - {x: -22.769531, y: -98.19705}
+        - {x: -19.769531, y: -105.19705}
+        - {x: 28.230469, y: -105.19705}
+        - {x: 28.230469, y: -104.19705}
+        - {x: 35.23047, y: -32.197052}
+        - {x: 35.23047, y: 66.80295}
+    - name: Richard Pickman_5
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 0
+        width: 196
+        height: 470
+      alignment: 9
+      pivot: {x: 0.45455995, y: 0.6101591}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.278992, y: 67.052635}
+        - {x: -32.27899, y: 42.052635}
+        - {x: -32.27899, y: -79.947365}
+        - {x: -25.278992, y: -104.947365}
+        - {x: 30.721008, y: -104.947365}
+        - {x: 36.72101, y: -80.947365}
+        - {x: 36.72101, y: 67.052635}
+    - name: Richard Pickman_6
+      rect:
+        serializedVersion: 2
+        x: 1772
+        y: 0
+        width: 196
+        height: 470
+      alignment: 9
+      pivot: {x: 0.3967939, y: 0.6101591}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.620728, y: 67.052635}
+        - {x: -28.620728, y: 48.052635}
+        - {x: -28.620728, y: -46.947365}
+        - {x: -21.620728, y: -104.947365}
+        - {x: 30.379272, y: -104.947365}
+        - {x: 35.379272, y: -59.947365}
+        - {x: 35.379272, y: 67.052635}
+    - name: Richard Pickman_7
+      rect:
+        serializedVersion: 2
+        x: 2036
+        y: 0
+        width: 196
+        height: 470
+      alignment: 9
+      pivot: {x: 0.44685456, y: 0.6107921}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.098633, y: 66.943756}
+        - {x: -32.098633, y: 57.943756}
+        - {x: -32.098633, y: -74.056244}
+        - {x: -27.098633, y: -105.056244}
+        - {x: 27.901367, y: -105.056244}
+        - {x: 35.901367, y: -22.056244}
+        - {x: 35.901367, y: 64.943756}
+        - {x: 25.901367, y: 66.943756}
+    - name: Richard Pickman_8
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 0
+        width: 196
+        height: 470
+      alignment: 9
+      pivot: {x: 0.439985, y: 0.6101591}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.493164, y: 67.052635}
+        - {x: -30.493164, y: 58.052635}
+        - {x: -30.493164, y: -36.947365}
+        - {x: -25.493164, y: -98.947365}
+        - {x: -19.493164, y: -104.947365}
+        - {x: 30.506836, y: -104.947365}
+        - {x: 36.506836, y: -53.947365}
+        - {x: 36.506836, y: 67.052635}
+    - name: Richard Pickman_9
+      rect:
+        serializedVersion: 2
+        x: 2564
+        y: 0
+        width: 196
+        height: 470
+      alignment: 9
+      pivot: {x: 0.5077739, y: 0.6115074}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28.742737, y: 66.820724}
+        - {x: -35.742737, y: 53.820724}
+        - {x: -35.742737, y: -71.179276}
+        - {x: -19.742737, y: -105.179276}
+        - {x: 28.257263, y: -105.179276}
+        - {x: 28.257263, y: -103.179276}
+        - {x: 36.257263, y: -43.179276}
+        - {x: 36.257263, y: 66.820724}
+    - name: Richard Pickman_10
+      rect:
+        serializedVersion: 2
+        x: 2826
+        y: 0
+        width: 196
+        height: 470
+      alignment: 9
+      pivot: {x: 0.44863206, y: 0.61209387}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 35.88025, y: 66.71986}
+        - {x: -12.119751, y: 66.71986}
+        - {x: -26.119751, y: 50.719856}
+        - {x: -31.119751, y: 8.719856}
+        - {x: -31.119751, y: -29.280144}
+        - {x: -20.119751, y: -105.28014}
+        - {x: 28.880249, y: -105.28014}
+        - {x: 28.880249, y: -103.28014}
+        - {x: 25.880249, y: -100.28014}
+        - {x: 35.88025, y: -17.280144}
+    - name: Richard Pickman_11
+      rect:
+        serializedVersion: 2
+        x: 3091
+        y: 0
+        width: 196
+        height: 470
+      alignment: 9
+      pivot: {x: 0.43510967, y: 0.6108277}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.17102, y: 66.93764}
+        - {x: -30.17102, y: 41.937637}
+        - {x: -30.17102, y: -70.06236}
+        - {x: -18.17102, y: -105.06236}
+        - {x: 29.82898, y: -105.06236}
+        - {x: 36.82898, y: -17.062363}
+        - {x: 36.82898, y: 66.93764}
+    - name: Richard Pickman_12
+      rect:
+        serializedVersion: 2
+        x: 3352
+        y: 0
+        width: 196
+        height: 470
+      alignment: 9
+      pivot: {x: 0.40125385, y: 0.6107921}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14.272217, y: -80.056244}
+        - {x: 18.272217, y: -78.056244}
+        - {x: 37.272217, y: -76.056244}
+        - {x: 37.272217, y: 66.943756}
+        - {x: -18.727783, y: 66.943756}
+        - {x: -26.727783, y: 41.943756}
+        - {x: -26.727783, y: -105.056244}
+        - {x: 32.272217, y: -105.056244}
+        - {x: 34.272217, y: -102.056244}
+        - {x: 18.272217, y: -81.056244}
+        - {x: 16.272217, y: -79.056244}
+    - name: Richard Pickman_13
+      rect:
+        serializedVersion: 2
+        x: 3617
+        y: 0
+        width: 196
+        height: 470
+      alignment: 9
+      pivot: {x: 0.45989865, y: 0.61337787}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.955444, y: 66.49901}
+        - {x: -30.955444, y: -105.50099}
+        - {x: 37.044556, y: -105.50099}
+        - {x: 37.044556, y: 66.49901}
+    - name: Richard Pickman_14
+      rect:
+        serializedVersion: 2
+        x: 3881
+        y: 0
+        width: 196
+        height: 470
+      alignment: 9
+      pivot: {x: 0.4566563, y: 0.6101413}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17.889648, y: -77.9443}
+        - {x: 20.889648, y: -69.9443}
+        - {x: 31.889648, y: -23.944298}
+        - {x: 36.88965, y: 12.055702}
+        - {x: 36.88965, y: 58.055702}
+        - {x: 32.88965, y: 67.0557}
+        - {x: -26.110352, y: 67.0557}
+        - {x: -31.110352, y: 55.055702}
+        - {x: -31.110352, y: -67.9443}
+        - {x: -19.110352, y: -104.9443}
+        - {x: 33.88965, y: -104.9443}
+        - {x: 22.889648, y: -75.9443}
+        - {x: 15.889648, y: -78.9443}
+        - {x: 13.889648, y: -79.9443}
+    - name: Richard Pickman_15
+      rect:
+        serializedVersion: 2
+        x: 4146
+        y: 0
+        width: 196
+        height: 470
+      alignment: 9
+      pivot: {x: 0.48869976, y: 0.6107566}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.9300537, y: 66.94987}
+        - {x: -25.930054, y: 50.949867}
+        - {x: -22.930054, y: 24.949867}
+        - {x: -12.930054, y: 7.9498672}
+        - {x: -32.930054, y: -3.0501328}
+        - {x: -32.930054, y: -62.050133}
+        - {x: -18.930054, y: -105.05013}
+        - {x: 37.069946, y: -105.05013}
+        - {x: 37.069946, y: 54.949867}
+        - {x: 29.069946, y: 66.94987}
+    - name: Richard Pickman_16
+      rect:
+        serializedVersion: 2
+        x: 4408
+        y: 0
+        width: 196
+        height: 470
+      alignment: 9
+      pivot: {x: 0.4486308, y: 0.61016214}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.175049, y: 67.05211}
+        - {x: -30.175049, y: 53.05211}
+        - {x: -30.175049, y: -82.94789}
+        - {x: -29.175049, y: -104.94789}
+        - {x: 37.82495, y: -104.94789}
+        - {x: 37.82495, y: 67.05211}
+    - name: Richard Pickman_17
+      rect:
+        serializedVersion: 2
+        x: 4672
+        y: 0
+        width: 196
+        height: 470
+      alignment: 9
+      pivot: {x: 0.49138033, y: 0.61079216}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.128662, y: 66.94375}
+        - {x: -32.128662, y: 56.94375}
+        - {x: -32.128662, y: -90.05625}
+        - {x: -25.128662, y: -105.05625}
+        - {x: 37.871338, y: -105.05625}
+        - {x: 37.871338, y: 66.94375}
+    - name: Richard Pickman_18
+      rect:
+        serializedVersion: 2
+        x: 4932
+        y: 0
+        width: 196
+        height: 470
+      alignment: 9
+      pivot: {x: 0.53126746, y: 0.6101591}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.840698, y: 67.052635}
+        - {x: -34.8407, y: 27.052635}
+        - {x: -34.8407, y: -62.947365}
+        - {x: -20.840698, y: -104.947365}
+        - {x: 31.159302, y: -104.947365}
+        - {x: 32.1593, y: -101.947365}
+        - {x: 35.1593, y: -81.947365}
+        - {x: 35.1593, y: 67.052635}
+    - name: Richard Pickman_19
+      rect:
+        serializedVersion: 2
+        x: 5196
+        y: 0
+        width: 196
+        height: 470
+      alignment: 9
+      pivot: {x: 0.5607238, y: 0.61079216}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.340698, y: 66.94375}
+        - {x: -19.340698, y: 64.94375}
+        - {x: -37.3407, y: 57.94375}
+        - {x: -37.3407, y: -105.05625}
+        - {x: 30.659302, y: -105.05625}
+        - {x: 30.659302, y: -103.05625}
+        - {x: 32.6593, y: -78.05625}
+        - {x: 32.6593, y: 66.94375}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,426 @@
+fileFormatVersion: 2
+guid: 7239767a46cdc0847b36af9a72c740eb
+timeCreated: 1452858417
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: monster attack4_0
+    21300002: monster attack4_1
+    21300004: monster attack4_2
+    21300006: monster attack4_3
+    21300008: monster attack4_4
+    21300010: monster attack4_5
+    21300012: monster attack4_6
+    21300014: monster attack4_7
+    21300016: monster attack4_8
+    21300018: monster attack4_9
+    21300020: monster attack4_10
+    21300022: monster attack4_11
+    21300024: monster attack4_12
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: monster attack4_0
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 0
+        width: 421
+        height: 436
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.80481, y: -70.5}
+        - {x: 45.19519, y: -70.5}
+        - {x: 54.19519, y: -24.5}
+        - {x: 54.19519, y: -1.5}
+        - {x: 48.19519, y: 1.5}
+        - {x: 45.19519, y: 1.5}
+        - {x: 14.19519, y: 70.5}
+        - {x: -39.80481, y: 70.5}
+        - {x: -47.80481, y: 48.5}
+        - {x: -47.80481, y: -1.5}
+        - {x: -44.80481, y: -2.5}
+        - {x: -38.80481, y: -2.5}
+        - {x: -30.80481, y: 6.5}
+        - {x: -46.80481, y: -22.5}
+        - {x: -47.80481, y: -35.5}
+        - {x: -47.80481, y: -70.5}
+        - {x: -25.80481, y: -70.5}
+        - {x: -22.80481, y: -67.5}
+        - {x: -22.80481, y: -64.5}
+    - name: monster attack4_1
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 0
+        width: 421
+        height: 436
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.184921, y: -70.5}
+        - {x: 50.81508, y: -70.5}
+        - {x: 53.81508, y: -67.5}
+        - {x: 53.81508, y: 60.5}
+        - {x: 48.81508, y: 70.5}
+        - {x: -22.184921, y: 70.5}
+        - {x: -35.18492, y: 59.5}
+        - {x: -39.18492, y: 48.5}
+        - {x: -42.18492, y: 38.5}
+        - {x: -52.18492, y: 11.5}
+        - {x: -52.18492, y: -1.5}
+        - {x: -49.18492, y: -4.5}
+        - {x: -34.18492, y: 2.5}
+        - {x: -43.18492, y: -16.5}
+        - {x: -51.18492, y: -70.5}
+        - {x: -25.184921, y: -70.5}
+        - {x: -24.184921, y: -69.5}
+        - {x: -23.184921, y: -64.5}
+        - {x: -23.184921, y: -69.5}
+    - name: monster attack4_2
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 0
+        width: 421
+        height: 436
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.828033, y: -70.5}
+        - {x: 57.171967, y: -70.5}
+        - {x: 57.171967, y: 70.5}
+        - {x: -26.828033, y: 70.5}
+        - {x: -34.828033, y: 61.5}
+        - {x: -52.828033, y: 18.5}
+        - {x: -52.828033, y: -3.5}
+        - {x: -44.828033, y: -6.5}
+        - {x: -30.828033, y: 13.5}
+        - {x: -6.8280334, y: 39.5}
+        - {x: -52.828033, y: -18.5}
+        - {x: -52.828033, y: -48.5}
+        - {x: -48.828033, y: -70.5}
+        - {x: -22.828033, y: -70.5}
+        - {x: -20.828033, y: -69.5}
+        - {x: -19.828033, y: -65.5}
+        - {x: -19.828033, y: -69.5}
+    - name: monster attack4_3
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 0
+        width: 421
+        height: 436
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 61.619324, y: -65.5}
+        - {x: 61.619324, y: 51.5}
+        - {x: 49.619324, y: 70.5}
+        - {x: -28.380676, y: 70.5}
+        - {x: -41.380676, y: 55.5}
+        - {x: -62.380676, y: 18.5}
+        - {x: -62.380676, y: 1.5}
+        - {x: -60.380676, y: -3.5}
+        - {x: -49.380676, y: -1.5}
+        - {x: -37.380676, y: 2.5}
+        - {x: -30.380676, y: 12.5}
+        - {x: -40.380676, y: -11.5}
+        - {x: -46.380676, y: -70.5}
+        - {x: 55.619324, y: -70.5}
+    - name: monster attack4_4
+      rect:
+        serializedVersion: 2
+        x: 2013
+        y: 0
+        width: 421
+        height: 436
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.730652, y: -70.5}
+        - {x: 54.26935, y: -70.5}
+        - {x: 64.26935, y: -27.5}
+        - {x: 64.26935, y: 24.5}
+        - {x: 42.26935, y: 70.5}
+        - {x: -22.730652, y: 70.5}
+        - {x: -63.73065, y: 31.5}
+        - {x: -63.73065, y: -56.5}
+        - {x: -43.73065, y: -70.5}
+        - {x: -13.730652, y: -70.5}
+        - {x: -13.730652, y: -69.5}
+        - {x: -12.730652, y: -65.5}
+    - name: monster attack4_5
+      rect:
+        serializedVersion: 2
+        x: 2476
+        y: 0
+        width: 421
+        height: 436
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 53.949585, y: -70.5}
+        - {x: 65.949585, y: -33.5}
+        - {x: 65.949585, y: 31.5}
+        - {x: 26.949585, y: 70.5}
+        - {x: -39.050415, y: 70.5}
+        - {x: -66.050415, y: 37.5}
+        - {x: -66.050415, y: -6.5}
+        - {x: -40.050415, y: -12.5}
+        - {x: -19.050415, y: 18.5}
+        - {x: -39.050415, y: -39.5}
+        - {x: -38.050415, y: -70.5}
+        - {x: -13.050415, y: -70.5}
+        - {x: -12.050415, y: -69.5}
+        - {x: -11.050415, y: -65.5}
+        - {x: -11.050415, y: -70.5}
+    - name: monster attack4_6
+      rect:
+        serializedVersion: 2
+        x: 2935
+        y: 0
+        width: 421
+        height: 436
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 58.33661, y: -70.5}
+        - {x: 69.33661, y: -19.5}
+        - {x: 69.33661, y: -1.5}
+        - {x: 65.33661, y: 4.5}
+        - {x: 36.33661, y: 70.5}
+        - {x: -18.663391, y: 70.5}
+        - {x: -67.66339, y: 24.5}
+        - {x: -67.66339, y: -34.5}
+        - {x: -40.66339, y: -70.5}
+        - {x: -8.663391, y: -70.5}
+        - {x: -7.663391, y: -69.5}
+        - {x: -6.663391, y: -65.5}
+        - {x: -6.663391, y: -70.5}
+    - name: monster attack4_7
+      rect:
+        serializedVersion: 2
+        x: 3416
+        y: 0
+        width: 421
+        height: 436
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.1640625, y: -70.5}
+        - {x: 52.835938, y: -70.5}
+        - {x: 65.83594, y: -19.5}
+        - {x: 65.83594, y: -0.5}
+        - {x: 54.835938, y: 2.5}
+        - {x: 21.835938, y: 69.5}
+        - {x: 19.835938, y: 70.5}
+        - {x: -23.164062, y: 70.5}
+        - {x: -66.16406, y: 29.5}
+        - {x: -66.16406, y: -48.5}
+        - {x: -58.164062, y: -55.5}
+        - {x: -40.164062, y: -70.5}
+        - {x: -12.1640625, y: -70.5}
+        - {x: -12.1640625, y: -63.5}
+        - {x: -11.1640625, y: -69.5}
+    - name: monster attack4_8
+      rect:
+        serializedVersion: 2
+        x: 3889
+        y: 0
+        width: 421
+        height: 436
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 53.7489, y: -70.5}
+        - {x: 64.7489, y: -59.5}
+        - {x: 64.7489, y: 51.5}
+        - {x: 54.7489, y: 70.5}
+        - {x: -26.251099, y: 70.5}
+        - {x: -28.251099, y: 68.5}
+        - {x: -63.2511, y: 16.5}
+        - {x: -63.2511, y: -8.5}
+        - {x: -40.2511, y: -70.5}
+        - {x: -16.251099, y: -70.5}
+        - {x: -13.251099, y: -67.5}
+        - {x: -13.251099, y: -63.5}
+        - {x: -12.251099, y: -70.5}
+    - name: monster attack4_9
+      rect:
+        serializedVersion: 2
+        x: 4370
+        y: 0
+        width: 421
+        height: 436
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 62.24817, y: 67.5}
+        - {x: 61.24817, y: 70.5}
+        - {x: -19.751831, y: 70.5}
+        - {x: -39.75183, y: 46.5}
+        - {x: -61.75183, y: 11.5}
+        - {x: -61.75183, y: -2.5}
+        - {x: -48.75183, y: -3.5}
+        - {x: -38.75183, y: 1.5}
+        - {x: -32.75183, y: 9.5}
+        - {x: -30.751831, y: 14.5}
+        - {x: -42.75183, y: -20.5}
+        - {x: -46.75183, y: -70.5}
+        - {x: 40.24817, y: -70.5}
+        - {x: 44.24817, y: -67.5}
+        - {x: 62.24817, y: -54.5}
+    - name: monster attack4_10
+      rect:
+        serializedVersion: 2
+        x: 4856
+        y: 0
+        width: 421
+        height: 436
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.636108, y: -70.5}
+        - {x: 42.36389, y: -70.5}
+        - {x: 57.36389, y: -23.5}
+        - {x: 57.36389, y: 1.5}
+        - {x: 51.36389, y: 2.5}
+        - {x: 25.363892, y: 57.5}
+        - {x: 11.363892, y: 70.5}
+        - {x: -20.636108, y: 70.5}
+        - {x: -33.63611, y: 63.5}
+        - {x: -53.63611, y: 7.5}
+        - {x: -53.63611, y: 1.5}
+        - {x: -49.63611, y: -2.5}
+        - {x: -41.63611, y: -2.5}
+        - {x: -33.63611, y: 11.5}
+        - {x: -6.6361084, y: 39.5}
+        - {x: -46.63611, y: -9.5}
+        - {x: -51.63611, y: -70.5}
+        - {x: -23.636108, y: -70.5}
+        - {x: -20.636108, y: -67.5}
+        - {x: -20.636108, y: -63.5}
+        - {x: -19.636108, y: -69.5}
+    - name: monster attack4_11
+      rect:
+        serializedVersion: 2
+        x: 5333
+        y: 0
+        width: 421
+        height: 436
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.429932, y: -70.5}
+        - {x: 53.57007, y: -70.5}
+        - {x: 53.57007, y: 21.5}
+        - {x: 8.570068, y: 70.5}
+        - {x: -26.429932, y: 70.5}
+        - {x: -48.42993, y: 57.5}
+        - {x: -52.42993, y: 29.5}
+        - {x: -52.42993, y: -1.5}
+        - {x: -43.42993, y: -4.5}
+        - {x: -38.42993, y: 2.5}
+        - {x: -35.42993, y: 13.5}
+        - {x: -12.429932, y: 27.5}
+        - {x: -42.42993, y: -15.5}
+        - {x: -52.42993, y: -35.5}
+        - {x: -52.42993, y: -54.5}
+        - {x: -49.42993, y: -70.5}
+        - {x: -27.429932, y: -70.5}
+        - {x: -24.429932, y: -67.5}
+        - {x: -24.429932, y: -63.5}
+    - name: monster attack4_12
+      rect:
+        serializedVersion: 2
+        x: 5809
+        y: 0
+        width: 421
+        height: 436
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.046997, y: -70.5}
+        - {x: 41.953003, y: -70.5}
+        - {x: 51.953003, y: -44.5}
+        - {x: 51.953003, y: 9.5}
+        - {x: 17.953003, y: 70.5}
+        - {x: -31.046997, y: 70.5}
+        - {x: -43.046997, y: 66.5}
+        - {x: -49.046997, y: 34.5}
+        - {x: -49.046997, y: -2.5}
+        - {x: -48.046997, y: -4.5}
+        - {x: -35.046997, y: -0.5}
+        - {x: -33.046997, y: 24.5}
+        - {x: -13.046997, y: 22.5}
+        - {x: -44.046997, y: -12.5}
+        - {x: -48.046997, y: -39.5}
+        - {x: -48.046997, y: -69.5}
+        - {x: -47.046997, y: -70.5}
+        - {x: -28.046997, y: -70.5}
+        - {x: -25.046997, y: -67.5}
+        - {x: -25.046997, y: -63.5}
+        - {x: -25.046997, y: -68.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
